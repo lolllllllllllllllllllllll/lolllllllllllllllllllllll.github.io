@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - StudySpot</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="website icon"type="png" href="download.jpeg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        h1 {
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 30px;
+            max-width: 600px;
+        }
+        iframe {
+            border: 1px solid white;
+            width: 100%;
+        }
+        a {
+            text-decoration: none;
+            color: #000000; /* Black color */
+        }
+        a:hover {
+            color: #757373; /* Grey color on hover */
+        }
+        @media only screen and (min-width: 500px) {
+            video {
+                width: 100%; /* Stretch the video to fill the container */
+            }
+        }
+        .icon {
+            position: absolute;
+            top: 40px;
+            right: 40px;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #myLinks {
+            display: none;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgb(169,169,169);
+            padding: 10px 20px;
+        }
+        #myLinks a {
+            display: block;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        .translate-button {
+            position: relative;
+            display: inline-block;
+        }
+        .translate-button button {
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .translate-button button:hover {
+            background-color: rgb(42,141,255);
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1;
+            margin-top: 10px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            border-radius: 5px;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StudySpot</h1>
+        <div class="icon" onclick="toggleMenu()">
+            &#9776; 
+        </div>
+        <div id="myLinks">
+            <a href="https://news.google.com">Articles</a>
+            <a href="https://google.com">Contact us</a>
+            <a href="https://microsoft.com">About us</a>
+        </div>
+    </header>
+    <div class="content">
+        <h1>Latest articles</h1>
+        <center>
+        <a href="https://studyspot-for-students.on.drv.tw/a/overviewharappavsourcivilization">
+            <img src="img_Harappa3.jpeg" alt="Image of article: An overview of Harappa civilization">
+            <h2>An overview of Harappa civilization</h2>
+            <h4>Written by Tamaghna Mazumder</h4>
+            <p>The Harappa town planning has amazed the archaeologists worldwide... read more </p>
+            <h1>
+               <a href="">View more articles</a>
+            </h1>
+            </center>
+        </a> 
+    </div>
+    <div class="content">
+        <h1>Follow us!</h1>
+        <center>
+         <a href="https://whatsapp.com/channel/0029VaXO8xp72WTmmGHrDA2L">
+            <img src="" width="40" height="40" alt="WhatsApp icon">
+        </a>
+        <a href="https://studyspot-for-students.on.drv.tw/r/ytredirect.html">
+            <img src="" width="40" height="40" alt="YouTube icon">
+        </a>
+        </center>
+    </div>
+    <div class="content">
+        <h1>Upcoming features!</h1>
+        <h3>take a look at what we are working on!</h3>
+        <h2>read aloud</h2>
+        <p>this feature allows the user to listen to a article.</p>
+        <h2>search</h2>
+        <p>this feature allows the user to search!</p>
+        <h2>languages</h2>
+        <p>this feature allows the user to view a article in a different language.</p>
+        <div class="translate-button">
+            <button onclick="toggleDropdown()"><i class="fas fa-language"></i></button>
+            <div id="dropdown" class="dropdown-content">
+                <a href="#" onclick="translatePage('en')">English</a>
+                <a href="#" onclick="translatePage('hi')">हिंदी(Hindi)</a
+                <a href="#" onclick="translatePage('bn')">   বাংলা(Bengali)</a>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Older articles</h1>
+        <center>
+        </center>
+    </div>
+    <div class="content">
+        <center>
+            <h4>You have reached the bottom!</h4>
+            <h4>If there is any problem with the website, please let us know!</h4>
+            <h4>Email: shadowdocumentry+feedback@gmail.com or click on <a href="mailto:shadowdocumentry+feedback@gmail.com">Send email</a>.</h4>
+            <p>note: the (+feedback) is not required, but it helps us to identify.</p>
+        </center>
+    </div>
+    <script>
+        function toggleMenu() {
+            var links = document.getElementById("myLinks");
+            if (links.style.display === "block") {
+                links.style.display = "none";
+            } else {
+                links.style.display = "block";
+            }
+        }
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+            } else {
+                dropdown.style.display = "block";
+            }
+        }
+        function translatePage(language) {
+        }
+    </script>
+</body>
+  </html>
+  
