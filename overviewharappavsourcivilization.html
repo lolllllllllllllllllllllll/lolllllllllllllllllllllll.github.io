@@ -165,81 +165,10 @@
         <a href="https://ar.pinterest.com/pin/771452611179342449/?amp_client_id=CLIENT_ID%28_%29&mweb_unauth_id=">view image source</a>
     </header>
 </div>
-
-<div class="content">
-  <header> 
-  <h3>how to make the model of harappa.</h3>
-  <h3>when I will make the model I will post it.</h3>
-    <a href="https://studyspot-for-students.drv.tw/a/Harappamodel/">how to make the model!</a></header>
-</div>
-
-<div class="content">
-    <h1>Comments</h1>
-    <div id="comments">
-    </div>
-    <form id="commentForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        <label for="comment">Comment:</label><br>
-        <textarea id="comment" name="comment" required></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
 <div class="content">
   <h4>If I make a mistake writing this article, please let me know</h4>
    <h4> Email: sadowdocumentry@gmail.com
   </h4>
   </div>
-  
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const commentForm = document.getElementById('commentForm');
-        const commentsContainer = document.getElementById('comments');
-
-        commentForm.addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            // Get form data
-            const name = document.getElementById('name').value;
-            const comment = document.getElementById('comment').value;
-
-            // Create a new comment element
-            const newComment = document.createElement('div');
-            newComment.classList.add('comment');
-            newComment.innerHTML = `
-                <strong>404 error</strong>: there is an error processing comment. please try again
-            `;
-
-            // Append new comment to comments container
-            commentsContainer.appendChild(newComment);
-
-            // Clear form inputs
-            document.getElementById('name').value = '';
-            document.getElementById('comment').value = '';
-        });
-
-        function displayComments() {
-          
-            const sampleComments = [
-                { name: "tamaghna mazumder", comment: "thanks for reading my blog!" },
-                { name: "Emily", comment: "Love the content, keep it up!" }
-            ];
-
-            // Loop through sample comments and append them to the comments container
-            sampleComments.forEach(function (item) {
-                const newComment = document.createElement('div');
-                newComment.classList.add('comment');
-                newComment.innerHTML = `
-                    <strong>${item.name}</strong>: ${item.comment}
-                `;
-                commentsContainer.appendChild(newComment);
-            });
-        }
-
-        // Call the displayComments function when the DOM content is loaded
-        displayComments();
-    });
-</script>
 </body>
 </html>
